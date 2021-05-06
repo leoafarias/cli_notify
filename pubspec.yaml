@@ -1,0 +1,14 @@
+name: cli_notify
+description: Check pub.dev for updates of your Dart CLI and prints update information.
+version: 0.0.1
+homepage: https://github.com/leoafarias/cli_notify
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  tint: ^2.0.0
+
+dev_dependencies:
+  effective_dart: ^1.3.1
+  test: ^1.14.4

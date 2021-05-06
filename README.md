@@ -28,9 +28,3 @@ void main() async {
 }
 
 ```
-
-Output will look like this
-
-```bash
-
-```

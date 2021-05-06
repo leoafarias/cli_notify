@@ -55,7 +55,7 @@ class Notify {
       final needUpdate = comparison < 0;
 
       if (needUpdate) {
-        final updateCmd = 'pub global activate fvm'.cyan();
+        final updateCmd = 'pub global activate $packageName'.cyan();
         final current = '$currentVersion'.grey();
         final latest = '$latestVersion'.green();
 

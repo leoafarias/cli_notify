@@ -1,5 +1,9 @@
 # cli_notify
 
+Check pub.dev for updates for your Dart CLI and prints update information.
+
+![Update notification](https://raw.githubusercontent.com/leoafarias/cli_notify/main/assets/screenshot.png)
+
 # Install
 
 ```bash
@@ -20,7 +24,13 @@ void main() async {
   await Notify(
     packageName: packageName,
     currentVersion: currentVersion,
-  ).updater();
+  ).update();
 }
+
+```
+
+Output will look like this
+
+```bash
 
 ```

@@ -11,7 +11,7 @@ void main() {
     test('Prints update', () async {
       await Notify(
         packageName: 'pkg',
-        currentVersion: '0.0.0',
+        currentVersion: '0.0.3',
       ).update();
     });
 

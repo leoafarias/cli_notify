@@ -31,16 +31,12 @@ class Notify {
 
   /// Fetches latest version from pub.dev
   Future<String?> _fetchLatestVersion() async {
-    try {
+    
       final response = await fetch(_packageUrl(packageName));
       final json = jsonDecode(response) as Map<String, dynamic>;
       final version = json['latest']['version'] as String;
       return version;
-    } on Exception catch (err) {
-      print(err.toString());
-      // Silent error
-      return null;
-    }
+    
   }
 
   /// Prints notice if version needs update
@@ -76,9 +72,8 @@ class Notify {
         return;
       }
       return;
-    } on Exception catch (err) {
+    } on Exception {
       // Don't do anything fail silently
-      print(err);
       return;
     }
   }

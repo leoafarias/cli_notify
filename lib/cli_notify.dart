@@ -4,3 +4,4 @@
 library cli_notify;
 
 export 'src/cli_notify_base.dart';
+export 'src/update_available.dart';
